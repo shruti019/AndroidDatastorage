@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shruti.datastorage.Search"
+    android:background="@android:color/black">
+
+    <TextView
+        android:text="Search Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="100dp"
+        android:id="@+id/button4"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3"
+        android:onClick="onSearch"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_height="200dp"
+        android:id="@+id/textView6"
+        android:layout_width="350dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/button3"
+        android:onClick="close"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+</RelativeLayout>
